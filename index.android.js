@@ -8,36 +8,53 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
+} from 'react-native';
+import {
+  Container,
+  Header,
+  Title,
+  Content,
+  Footer,
+  FooterTab,
+  Button,
+  Icon,
   Text,
   View
-} from 'react-native';
+} from 'native-base';
 
 class MyFirstRN extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-        Hello World!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-        </Text>
-      </View>
+      <Container>
+        <Header>
+          <Title>Hello</Title>
+        </Header>
+
+        <Content>
+
+          <Text style={styles.welcome}>
+            Hello World!
+          </Text>
+          <Text style={styles.instructions}>
+            To get started, edit index.android.js
+          </Text>
+          <Text style={styles.instructions}>
+            Double tap R on your keyboard to reload,{'\n'}
+            Shake or press menu button for dev menu
+          </Text>
+          <Button>Touch me!</Button>
+        </Content>
+      </Container>
     );
+  }
+
+  buttonWasPressed(event) {
+    alert("hi");
+    console.log("pressed");
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
   welcome: {
     fontSize: 20,
     textAlign: 'center',

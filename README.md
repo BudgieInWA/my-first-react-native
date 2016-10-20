@@ -27,11 +27,14 @@ On a Mac, use `react-native run-ios` or open `/ios/*.xcodeproj` in Xcode.
 
 ### Android
 
-First, start an android emulator at API level 23 or greater.
 ```
-$YOUR_ANDROID_ROOT/tools/android avd  # then launch an emulator.
+export ANDROID_HOME=/home/ben/Android/Sdk/  # or bash equivalent, pointing to your Android SDK install.
+
+$ANDROID_HOME/tools/android avd  # then launch an emulator.
 
 react-native start --reset-cache  # and keep it running.
 
 react-native run-android  # to compile and install the app on the running device.
+
+react-native log-android  # to see log output (including console.log).
 ```

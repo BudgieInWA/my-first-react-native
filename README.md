@@ -2,12 +2,16 @@
 
 ## Installing
 
+1. Install `npm`.
+
 1. Install the React Native CLI tool and the build dependencies.
     `install-build.sh`
 
 ### iOS
 
-Buy a Mac, because Apple.
+1. Buy a Mac, because Apple.
+1. Install XCode.
+1. Install `watchman`: `brew install watchman`.
 
 ### Android
 
@@ -16,14 +20,15 @@ You need to ensure that the android SDK is installed.
 1. Install [Android Studio](https://developer.android.com/studio/index.html).
 1. Create a project to ensure that the SDK is installed.
 1. Find out where the SDK is installed and `cd` to the location.
-	This was `/home/ben/Android/Sdk` for me.
+	This was `~/Android/Sdk` for me.
 1. From the SDK root, run `./tools/android` and install a bunch of stuff including SDK Tools, Platform Tools, ADB, API 23.
 
 ## Running
 
 ### iOS
 
-On a Mac, use `react-native run-ios` or open `/ios/*.xcodeproj` in Xcode.
+1. On a mac, open `/ios/*.xcodeproj` in Xcode.
+1. Click "Run".
 
 ### Android
 

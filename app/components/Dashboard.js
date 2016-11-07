@@ -28,7 +28,9 @@ class Dashboard extends Component {
     return (
       <Container>
         <Header>
-          <Button onPress={this.goBack}>back</Button>
+          <Button transparent onPress={this.goBack}>
+            <Icon name='ios-arrow-back' />
+          </Button>
           <Title>Dashing</Title>
         </Header>
 
